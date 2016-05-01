@@ -1,0 +1,21 @@
+<% layout('layout') -%>
+<div class="container">
+  <h2>Benefiter Login form</h2>
+  <form action="/login" method="post">
+  <div class="loginBox">
+    <div class="form-group">
+      <label for="userId">UserId:</label>
+      <input type="text" class="form-control" placeholder="Enter UserId" name="username">
+    </div>
+    <div class="form-group">
+      <label for="pwd">Password:</label>
+      <input type="password" class="form-control" placeholder="Enter password" name="password">
+    </div>
+    <button type="submit" class="btn btn-default">Submit</button>
+    <p>
+      <a href="/forgotPassword" type="submit">Forgot Password?</a>
+      <a style="float:right"href="/signUp" type="submit">Register</a>
+    </p>
+    </div>
+  </form>
+</div>  

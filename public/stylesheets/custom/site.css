@@ -1,0 +1,237 @@
+﻿/* Application CSS -Starts Here*/
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 92.5%;
+}
+/*Sir Dark: 538135*/
+/*538135*/
+
+/*Sir Light: 7aba51*/
+/*00db9d*/
+
+a {
+    color: #538135;
+}
+span{
+    color:#000;
+}
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    padding-top: 50px;
+    font-family: Arial;
+    font-size: 12px !important;
+    /*background-color: #EDEDED;*/
+    color: #7aba51;
+}
+
+#pageWrapper {
+    min-height: 100%;
+    position: relative;
+}
+
+#contentArea {
+    padding: 30px;
+    padding-bottom: 50px;
+}
+
+#footerDiv {
+    position: absolute;
+    bottom: 0;
+    /*width: 100%;border:solid 1px red;*/
+    width: 100%;
+    background: #333;
+    height: 15px;
+    padding: 10px 15px;
+    color: #fff;
+}
+
+    #footerDiv a {
+        color: #7aba51;
+    }
+/* Application CSS -Ends Here*/
+
+/* Bootstrap Overrides CSS -Starts Here*/
+.navbar {
+    background-color: #4a4848 !important;
+    padding: 0.2%;
+    border-bottom: solid 5px #639443;
+}
+
+.navbar-fixed-top {
+    /*width: 99.7%;*/
+    /*border:solid 1px red;*/
+}
+
+.navbar-inverse .navbar-brand {
+    color: #fff;
+    background-image: url('../images/logo.png');
+    height: 20px;
+    width: auto;
+    background-repeat: no-repeat;
+    background-position-x: left;
+    background-size: contain;
+}
+
+    .navbar-inverse .navbar-brand span {
+        margin-left: 25%;
+        display: inline-block;
+        width: 100%;
+        color: #7aba51;
+    }
+
+.navbar .container-fluid .navbar-header {
+    padding-top: 7px;
+    padding-bottom: 5px;
+}
+
+.navbar-inverse .navbar-nav {
+    margin-top: 1.4%;
+    float: right;
+}
+
+.navbar-right {
+    margin-right: 2%;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color: #fff !important;
+    font-weight:bold;
+    background-color: #7aba51;
+    padding: 3px 10px;
+    margin-right: 10px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -khtml-border-radius: 4px;
+    border-radius: 4px;
+    -moz-box-shadow: 0px 2px 0px 0px #538135;
+    -webkit-box-shadow: 0px 2px 0px 0px #538135;
+    box-shadow: 0px 2px 0px 0px #538135;
+}
+
+    .navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
+        color: #FFF !important;        
+        background-color: #538135;
+        -moz-border-radius: 4px;
+        -webkit-border-radius: 4px;
+        -khtml-border-radius: 4px;
+        border-radius: 4px;
+        -moz-box-shadow: 0 0 1px 0 #7aba51;
+        -webkit-box-shadow: 0 0 1px 0 #7aba51;
+        box-shadow: 0 0 1px 0 #7aba51;
+    }
+
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
+     color: #FFF !important;
+        background-color: #538135;
+        -moz-border-radius: 4px;
+        -webkit-border-radius: 4px;
+        -khtml-border-radius: 4px;
+        border-radius: 4px;
+       -moz-box-shadow: 0 0 1px 0 #7aba51;
+        -webkit-box-shadow: 0 0 1px 0 #7aba51;
+        box-shadow: 0 0 1px 0 #7aba51;
+}
+
+
+.btn-primary {
+    background-color: #333;
+    border-color: #89949B;
+}
+
+    .btn-primary:hover {
+        background-color: #89949B;
+        border-color: #333;
+        color: #333;
+    }
+
+label {
+    color: #333;
+}
+/* Bootstrap Overrides CSS -Ends Here*/
+
+/* Kendo Overrides CSS -Starts Here*/
+/* reset everything to the default box model */
+
+*, :before, :after {
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+}
+
+/* set a border-box model only to elements that need it */
+
+.form-control, /* if this class is applied to a Kendo UI widget, its layout may change */
+.container,
+.container-fluid,
+.row,
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1,
+.col-xs-2, .col-sm-2, .col-md-2, .col-lg-2,
+.col-xs-3, .col-sm-3, .col-md-3, .col-lg-3,
+.col-xs-4, .col-sm-4, .col-md-4, .col-lg-4,
+.col-xs-5, .col-sm-5, .col-md-5, .col-lg-5,
+.col-xs-6, .col-sm-6, .col-md-6, .col-lg-6,
+.col-xs-7, .col-sm-7, .col-md-7, .col-lg-7,
+.col-xs-8, .col-sm-8, .col-md-8, .col-lg-8,
+.col-xs-9, .col-sm-9, .col-md-9, .col-lg-9,
+.col-xs-10, .col-sm-10, .col-md-10, .col-lg-10,
+.col-xs-11, .col-sm-11, .col-md-11, .col-lg-11,
+.col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.form-horizontal .k-dropdown {
+    width: 100%;
+}
+
+.k-window {
+    overflow-x: hidden; /*To fix overflow issue when adding bootstrap row in kendo window*/
+}
+
+
+    .k-window .row {
+        margin: 0px; /*To fix overflow issue when adding bootstrap row in kendo window*/
+    }
+
+.k-window-content {
+    overflow: hidden;
+}
+
+.k-select {
+    cursor: pointer;
+}
+
+.k-widget.k-tooltip {
+    margin-top: 10px; /* to fix click event not firing issue for anchor and button*/
+}
+
+.k-multiselect .k-button{
+    border:solid 1px #538135;
+    background-color:#7aba51;
+}
+.k-multiselect .k-button.k-state-hover{
+     border:solid 1px #538135;
+    background-color:#66a041;
+}
+/* Kendo Overrides CSS -Ends Here*/
+.pagination {
+    margin: 0 0;
+}
+
+
+
+
+
+.resumInp{width:90%;}
+.boxText{font-family:Arial; line-height:18px; font-size:12px; border:1px solid #6487DC; margin:0 auto 0 auto;}
+
+.yellowtext{background-color:yellow;}
+
+.inpdrag{border:0px; background:none; cursor:pointer;}
+.inpdrag:focus{border:0px;background:none; }
