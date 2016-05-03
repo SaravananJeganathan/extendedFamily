@@ -21,8 +21,6 @@ exports.db = orm.connect({
 
 });
 
-
-
 exports.getConnection = function (callback) {
     pool.getConnection(function (err, conn) {
         if (err) {

@@ -10,13 +10,10 @@
     <!-- Bootstrap 3.3.5 -->
     <link rel="stylesheet" href="stylesheets/bootstrap/bootstrap.min.css">
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="stylesheets/bootstrap/font-awesome.min.css">
     <!-- Ionicons -->
-    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
-    <!-- kendo css -->
-	<link href="javascripts/plugins/kendo/styles/kendo.common-bootstrap.min.css" type="text/css" rel="stylesheet">
-    <link href="javascripts/plugins/kendo/styles/kendo.common.min.css" type="text/css" rel="stylesheet">
-    <link href="javascripts/plugins/kendo/styles/kendo.bootstrap.min.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="stylesheets/bootstrap/ionicons.min.css">
+   
 	<!-- custom css -->
 	<link rel="stylesheet" href="stylesheets/custom/style.css">
 	<link rel="stylesheet" href="stylesheets/custom/toaster.css">
@@ -31,7 +28,11 @@
  
         <!-- Content Wrapper. Contains page content -->
         <div class="content-wrapper">
-          {{temp}} {{user.user.FirstName}} {{user.user.LastName}}
+         <header class="main-header">
+         <p> Welcome {{user.user.firstName}} {{user.user.lastName}} <a href="/logout" class="btn btn-default btn-flat">Sign out</a></p>
+
+
+</header>
             <!-- Main content -->
             <section class="content">
                 <%- body %>
@@ -56,15 +57,13 @@
 
 
 <!-- jQuery 2.1.4 -->
-    
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="javascripts/AngularJs/angular-1.4.7/docs/components/jquery-2.1.1/jquery.min.js"></script>
     <script src="javascripts/plugins/jQueryUI/jquery-ui.min.js"></script>
     <!-- Bootstrap 3.3.5 -->
     <script src="javascripts/bootstrap/bootstrap.min.js"></script>
     <script src="javascripts/Others/linq.js" type="text/javascript"></script>
 
-    <!-- angular modules 
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.6/angular.min.js" type="text/javascript"></script> -->
+    <!-- angular modules -->
 <script src="javascripts/AngularJs/angular-1.4.7/angular.js" type="text/javascript"></script>
 
 	<script src="javascripts/AngularJs/angular-1.4.7/dirPagination.js" type="text/javascript"></script>
@@ -81,7 +80,6 @@
     <script src="javascripts/Others/ng-toaster.js" type="text/javascript"></script>
     <script src="javascripts/Others/stacktrace.0.6.4.js" type="text/javascript"></script>
 
-<script src="javascripts/plugins/kendo/kendo.all.min.js" type="text/javascript"></script>
     <script src="javascripts/Others/jszip.min.js" type="text/javascript"></script>
 
 
